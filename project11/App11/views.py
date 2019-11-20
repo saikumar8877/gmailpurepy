@@ -11,8 +11,8 @@ def elogin(request):
     password=request.POST.get("pwd")
 
     if username=="Sathya" and password=="Tech":
-         subject = "Test Mail"
-         message = " Congratulations"
+         subject = "Thank you for logging Arvind Portal"
+         message = "This is auto-generated mail"
          send_mail(subject, message, sai.EMAIL_HOST_USER, ["saikumar8877@gmail.com"])
          return render(request,"welcome.html")
     else:
